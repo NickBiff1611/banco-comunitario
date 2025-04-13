@@ -13,9 +13,7 @@ try {
     contaCorrente1 = new ContaCorrente('cc001', cliente1);
     console.log('Conta corrente criada com sucesso!');
   }
-} catch (e) {
-  console.error(e);
-}
+} 
 
 try {
   if (cliente2.renda >= 500) {
@@ -23,9 +21,7 @@ try {
   } else {
     throw new Error('Renda insuficiente para abrir conta corrente');
   }
-} catch (e) {
-  console.error(e.message);
-}
+} 
 
 const contaPoupanca1 = new ContaPoupanca('cp001', cliente2, 0.02);
 
