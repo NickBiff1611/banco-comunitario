@@ -1,10 +1,10 @@
 import { Conta } from './Conta';
 
-export class ContaPoupanca extends Conta {
+export class ContaPoupanca implements Conta {
   constructor(
     numero: string,
     cliente: any,
-    public taxaJuros: number 
+    taxaJuros: number 
   ) {
     super(numero, cliente);
   }
