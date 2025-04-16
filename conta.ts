@@ -10,13 +10,11 @@ export abstract class Conta implements IConta {
   ) {}
 
   depositar(valor: number): void {
-    if (valor <= 0) throw new Error('Valor inválido para depósito');
     this.saldo += valor;
   }
 
   sacar(valor: number): void {
     if (valor <= 0) throw new Error('Valor inválido para saque');
-    if (valor > this.saldo) throw new Error('Saldo insuficiente');
     this.saldo -= valor;
   }
 
